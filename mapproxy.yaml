@@ -13,7 +13,6 @@ caches:
     grids: [webmercator]
     sources: [peruskarttaWMS]
     meta_size: [4, 4]
-    disable_storage: true
     meta_buffer: 0
 
 sources:
