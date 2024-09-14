@@ -1,18 +1,18 @@
 services:
   tms:
     use_grid_names: true
-    origin: 'nw'
-    
+    origin: "nw"
+
 layers:
   - name: peruskartta
     title: peruskartta
     sources: [peruskarttaCache]
-    
+
 caches:
   peruskarttaCache:
     grids: [webmercator]
     sources: [peruskarttaWMS]
-    meta_size: [1, 1]
+    meta_size: [4, 4]
     disable_storage: true
     meta_buffer: 0
 
@@ -23,7 +23,7 @@ sources:
       url: https://tiles.kartat.kapsi.fi/peruskartta?
       layers: peruskartta
       transparent: true
-    supported_srs: ['EPSG:4326']
+    supported_srs: ["EPSG:4326"]
 
 grids:
   webmercator:
@@ -31,4 +31,4 @@ grids:
 
 globals:
   cache:
-    tile_lock_dir: '/tmp/tile_locks'
+    tile_lock_dir: "/tmp/tile_locks"
