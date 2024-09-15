@@ -7,11 +7,19 @@ layers:
   - name: peruskartta
     title: peruskartta
     sources: [peruskarttaCache]
+  - name: ortokuva
+    title: ortokuva
+    sources: [ortokuvaCache]
 
 caches:
   peruskarttaCache:
     grids: [webmercator]
     sources: [peruskarttaWMS]
+    meta_size: [4, 4]
+    meta_buffer: 0
+  ortokuvaCache:
+    grids: [webmercator]
+    sources: [ortokuvaWMS]
     meta_size: [4, 4]
     meta_buffer: 0
 
@@ -23,6 +31,13 @@ sources:
       layers: peruskartta
       transparent: true
     supported_srs: ["EPSG:4326"]
+  ortokuvaWMS:
+    type: wms
+    req:
+      url: https://tiles.kartat.kapsi.fi/ortokuva?
+      layers: ortokuva
+      transparent: true
+    supported_srs: ["EPSG:3857"]
 
 grids:
   webmercator:
