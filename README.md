@@ -8,7 +8,7 @@ A mapproxy service serving XYZ (also known as EPSG:3857 or EPSG:900913 or slippy
 
 and the Ortokuva tiles via:
 
-    https://peruskartta.fly.dev/tiles/ortokuva/webmercator/{z}/{x}/{y}.png%0A
+    https://peruskartta.fly.dev/tiles/ortokuva/webmercator/{z}/{x}/{y}.png
 
 Use the above URL to add Peruskartta as an XYZ layer to QGIS canvas.
 
