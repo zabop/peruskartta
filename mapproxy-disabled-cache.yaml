@@ -24,24 +24,28 @@ caches:
     meta_size: [4, 4]
     disable_storage: true
     meta_buffer: 0
+    format: image/jpeg
   taustakarttaCache:
     grids: [webmercator]
     sources: [taustakarttaWMS]
     meta_size: [4, 4]
     disable_storage: true
     meta_buffer: 0
+    format: image/jpeg
   ortokuvaCache:
     grids: [webmercator]
     sources: [ortokuvaWMS]
     meta_size: [4, 4]
     disable_storage: true
     meta_buffer: 0
+    format: image/jpeg
   kiinteistorajatCache:
     grids: [webmercator]
     sources: [kiinteistorajatWMS]
     meta_size: [4, 4]
     disable_storage: true
     meta_buffer: 0
+    format: image/jpeg
 
 sources:
   peruskarttaWMS:
