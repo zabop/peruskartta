@@ -71,7 +71,7 @@ sources:
       url: https://tiles.kartat.kapsi.fi/kiinteistorajat?
       layers: kiinteistorajat
       transparent: true
-    supported_srs: ["EPSG:4326"]
+    supported_srs: ["EPSG:3067"]
 
 grids:
   webmercator:
